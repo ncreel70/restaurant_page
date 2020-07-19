@@ -16,7 +16,11 @@ tabs.forEach(tab => {
         let targetId = event.target.id;
 
         if (targetId === 'about') {
+<<<<<<< HEAD
             aboutLoader();
+=======
+            aboutLoader
+>>>>>>> c0b143a22b0dacc7e4c7ca1acca5482907711ec5
         } else if (targetId === 'menu') {
             menuContainer.menuLoader(menuContainer.menu)
     }
