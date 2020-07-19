@@ -1,6 +1,6 @@
 const menuContainer = (() => {
 
-    const content = document.getElementsByClassName('content')[0];
+    const container = document.getElementsByClassName('container')[0];
     
 
     const menu = {
@@ -37,7 +37,7 @@ const menuContainer = (() => {
                 currentElement.setAttribute('id',`${food}`)
                 currentElement.setAttribute('class', 'menuItem')
                 currentElement.innerText = `${food.charAt(0).toUpperCase() + food.slice(1) + ' ' + menu[food].price }`
-                content.appendChild(currentElement)
+                container.appendChild(currentElement)
 
             }
         }
