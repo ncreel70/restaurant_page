@@ -1,7 +1,8 @@
 import headerLoader from './header.js'
 import tabContainer from './tabs.js'
 import aboutLoader from './about.js'
-import menuContainer from './menu.js';
+import menuContainer from './menu.js'
+import contactLoader from './contact.js'
 
 headerLoader;
 tabContainer.tabGenerator;
@@ -19,8 +20,10 @@ tabs.forEach(tab => {
             aboutLoader();
         } else if (targetId === 'menu') {
             menuContainer.menuLoader(menuContainer.menu)
-    }
-})
+        } else if (targetId === 'contact') {
+            contactLoader();
+        }
+    })
 })
 
 
