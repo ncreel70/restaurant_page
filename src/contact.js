@@ -1,18 +1,17 @@
-const container = document.getElementsByClassName('container')[0];
-const contactForm = document.getElementById('contactForm');
-
-
-const contactLoader = () => {
-    const formElement = document.createElement('form');
-
-    formElement.id = 'contactForm';
+const contactContainer = (() => {
+    const container = document.getElementsByClassName('container')[0];
     
+    const contactLoader = () => {
+        const firstNameForm = document.createElement('input');
+        const contentForm = document.createElement('div');
 
-    const firstNameForm = document.createElement("input");
+        contentForm.appendChild(firstNameForm)
+        container.innerHTML = '<form class ="contactForm">' + contentForm + '</form>';
+    };
+
+    return { contactLoader }
+})();
 
 
-    container.appendChild(formElement)
-    formElement.innerHTML = document.createElement('input');
-};
 
-export default contactLoader;
+export default contactContainer;
