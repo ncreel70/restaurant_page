@@ -2,6 +2,7 @@ const menuContainer = (() => {
 
     const container = document.getElementsByClassName('container')[0];
     
+    
 
     const menu = {
         hamburger: {
@@ -30,6 +31,7 @@ const menuContainer = (() => {
         }
     }
     const menuLoader = (menuObj) => { 
+        container.classList = container.classList[0];
         for(let food in menuObj) {
             
             if(menuObj.hasOwnProperty(food)) {
